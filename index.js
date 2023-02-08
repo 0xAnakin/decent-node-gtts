@@ -123,7 +123,6 @@ function getHeader() {
   var headers = {
     "User-Agent": fakeUa()
   };
-  console.log('headers', headers);
   return headers;
 }
 
@@ -181,7 +180,6 @@ function createServer(getArgs, port) {
       res.writeHead(200, {'Content-Type': 'audio/mpeg'});
       stream(argsCallback, queryData.text).pipe(res);
     } else {
-      console.log(req.headers);
       res.writeHead(200, {'Content-Type': 'application/json'});
       res.end(JSON.stringify({
         code: -1,
