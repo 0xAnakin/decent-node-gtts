@@ -3,7 +3,7 @@ Google Text-to-Speech for NodeJS (Unofficial API)
 
 ## How to install
 ```bash
-npm install decent-decent-node-gtts
+npm install decent-node-gtts
 ```
 
 ## How to use
